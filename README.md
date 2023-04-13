@@ -1,11 +1,11 @@
 
-# rsc
+# run-c
 
-**R**un multiple npm-**s**cripts **c**oncurrently
+Run multiple npm-scripts concurrently
 ## Installation
 
 ```bash
-npm install rsc --save-dev
+npm install run-c --save-dev
 ```
     
 ## Usage/Examples
@@ -15,13 +15,13 @@ npm install rsc --save-dev
   "scripts": {
     "check1": "tsc --noEmit",
     "check2": "eslint . --ext=.ts",
-    "check": "rsc check1 check2"
+    "check": "run-c check1 check2"
   }
 }
 ```
 
 ```bash
-npx rsc check1 check2
+npx run-c check1 check2
 ```
 or
 ```bash
