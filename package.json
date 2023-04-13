@@ -1,0 +1,19 @@
+{
+  "name": "rsc",
+  "version": "0.0.1",
+  "description": "Run multiple npm-scripts concurrently",
+  "bin": "bin.cjs",
+  "repository": "git@github.com:erwinstone/rsc.git",
+  "author": "Erwin Stone <erwinstone@pm.me>",
+  "license": "MIT",
+  "keywords": [
+    "concurrently",
+    "parallel",
+    "run-all",
+    "npm-scripts"
+  ],
+  "bugs": {
+    "url": "https://github.com/erwinstone/rsc/issues"
+  },
+  "homepage": "https://github.com/erwinstone/rsc#readme"
+}
