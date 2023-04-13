@@ -1,11 +1,11 @@
 
-# run-c
+# rusco
 
 Run multiple npm-scripts concurrently
 ## Installation
 
 ```bash
-npm install run-c --save-dev
+npm install rusco --save-dev
 ```
     
 ## Usage/Examples
@@ -15,13 +15,13 @@ npm install run-c --save-dev
   "scripts": {
     "check1": "tsc --noEmit",
     "check2": "eslint . --ext=.ts",
-    "check": "run-c check1 check2"
+    "check": "rusco check1 check2"
   }
 }
 ```
 
 ```bash
-npx run-c check1 check2
+npx rusco check1 check2
 ```
 or
 ```bash

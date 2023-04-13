@@ -1,9 +1,9 @@
 {
-  "name": "run-c",
+  "name": "rusco",
   "version": "0.0.1",
   "description": "Run multiple npm-scripts concurrently",
   "bin": "bin.cjs",
-  "repository": "git@github.com:erwinstone/run-c.git",
+  "repository": "git@github.com:erwinstone/rusco.git",
   "author": "Erwin Stone <erwinstone@pm.me>",
   "license": "MIT",
   "keywords": [
@@ -13,7 +13,7 @@
     "npm-scripts"
   ],
   "bugs": {
-    "url": "https://github.com/erwinstone/run-c/issues"
+    "url": "https://github.com/erwinstone/rusco/issues"
   },
-  "homepage": "https://github.com/erwinstone/run-c#readme"
+  "homepage": "https://github.com/erwinstone/rusco#readme"
 }
