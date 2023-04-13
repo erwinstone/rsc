@@ -1,11 +1,14 @@
 {
   "name": "rusco",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Run multiple npm-scripts concurrently",
-  "bin": "bin.cjs",
+  "bin": "bin.min.cjs",
   "repository": "git@github.com:erwinstone/rusco.git",
   "author": "Erwin Stone <erwinstone@pm.me>",
   "license": "MIT",
+  "files": [
+    "bin.min.cjs"
+  ],
   "keywords": [
     "concurrently",
     "parallel",
