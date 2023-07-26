@@ -13,17 +13,21 @@ npm install rusco --save-dev
 ```json
 {
   "scripts": {
-    "check1": "tsc --noEmit",
-    "check2": "eslint . --ext=.ts",
-    "check": "rusco check1 check2"
+    "dev": "rusco dev:esm dev:iife",
+    "dev:esm": "esbuild src/index.ts --outfile=dist/index.mjs --watch --format=esm",
+    "dev:iife": "esbuild src/index.ts --outfile=dist/index.js --watch --format=iife"
   }
 }
 ```
 
 ```bash
-npx rusco check1 check2
+npm run dev
 ```
 or
 ```bash
-npm run check
+npx rusco dev:esm dev:iife
+```
+or
+```bash
+npx rusco dev:*
 ```

@@ -9,8 +9,12 @@ process.stdout.write(process.platform === 'win32' ? '\x1B[2J\x1B[0f' : '\x1B[2J\
 
 const requestedScripts = process.argv.filter((_, index) => index !== 0 && index !== 1)
 const scripts = Object.fromEntries(
-  Object.entries(availableScripts).filter(([key]) => requestedScripts.includes(key)),
+  Object.entries(availableScripts).filter(([key]) => requestedScripts.some((req) => {
+    const regex = new RegExp(`^${req.replace('*', '.*')}$`)
+    return regex.test(key)
+  })),
 )
+
 async function runScripts() {
   const promises = []
   for (const script in scripts) {
